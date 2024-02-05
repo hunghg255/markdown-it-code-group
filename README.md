@@ -27,22 +27,7 @@ const html = md.render(/* ... */)
 
 For the options available, please refer to [the jsdoc](./src/index.ts).
 
-to the following HTML:
-
-```html
-<div class="markdown-alert markdown-alert-note">
-  <p class="markdown-alert-title" dir="auto"><!-- svg icon-->Note</p><p>
-  Highlights information that users should take into account, even when skimming.</p>
-</div>
-```
-
-Which is compatible with the GitHub's output.
-
 ### Styling
-
-You can write your custom styles for your alerts.
-
-We also provide some CSS extracted from GitHub's styles for you to use.
 
 ```js
 import 'markdown-it-code-group/styles/code-group-colors-light.css'
