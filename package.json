@@ -1,0 +1,84 @@
+{
+  "name": "markdown-it-code-group",
+  "type": "module",
+  "version": "0.0.5",
+  "packageManager": "pnpm@8.13.1",
+  "description": "Support code group for markdown-it",
+  "author": "Hung <giahung197bg@gmail.com.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/hunghg255",
+  "homepage": "https://github.com/hunghg255/markdown-it-code-group#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hunghg255/markdown-it-code-group.git"
+  },
+  "bugs": "https://github.com/hunghg255/markdown-it-code-group/issues",
+  "keywords": [
+    "markdown-it",
+    "code-group"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./styles/*": "./styles/*"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist",
+    "styles"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks"
+  },
+  "peerDependencies": {
+    "markdown-it": "^14.0.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.1",
+    "@antfu/ni": "^0.21.12",
+    "@antfu/utils": "^0.7.7",
+    "@types/markdown-it": "^13.0.7",
+    "@types/node": "^20.10.6",
+    "bumpp": "^9.2.1",
+    "eslint": "^8.56.0",
+    "esno": "^4.0.0",
+    "lint-staged": "^15.2.0",
+    "markdown-it": "^14.0.0",
+    "pnpm": "^8.13.1",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0",
+    "vite": "^5.0.10",
+    "vitest": "^1.1.1"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

@@ -1,0 +1,33 @@
+.markdown-code-group {
+  background-color: #242424;
+  contain: content;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.markdown-group-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.markdown-group-tab .markdown-group-tab-item {
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-bottom: 1px solid transparent;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+.markdown-group-tab .markdown-group-tab-item.active {
+  border-bottom: 1px solid #ffa500;
+  color: #ffa500;
+}
+
+.markdown-group-tab .markdown-group-tab-item svg {
+  max-width: 18px;
+}
