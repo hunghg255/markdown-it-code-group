@@ -16,11 +16,11 @@ npm i markdown-it-code-group
 
 ```js
 import MarkdownIt from 'markdown-it'
-import MarkdownItGitHubAlerts from 'markdown-it-code-group'
+import MarkdownItCodeGroup from 'markdown-it-code-group'
 
 const md = MarkdownIt()
 
-md.use(MarkdownItGitHubAlerts, /* Options */)
+md.use(MarkdownItCodeGroup, /* Options */)
 
 const html = md.render(/* ... */)
 ```
