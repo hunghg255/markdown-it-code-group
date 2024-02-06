@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 importers:
 
   .:
@@ -22,6 +26,9 @@ importers:
       bumpp:
         specifier: ^9.2.1
         version: 9.2.1
+      convert-markdown-to-html:
+        specifier: ^0.0.2
+        version: 0.0.2
       eslint:
         specifier: ^8.56.0
         version: 8.56.0
@@ -1859,6 +1866,11 @@ packages:
   /consola@3.2.3:
     resolution: {integrity: sha512-I5qxpzLv+sJhTVEoLYNcTW+bThDCPsit0vLNKShZx6rLtpilNpmmeTPaeqJb9ZE9dV3DGaeby6Vuhrw38WjeyQ==}
     engines: {node: ^14.18.0 || >=16.10.0}
+    dev: true
+
+  /convert-markdown-to-html@0.0.2:
+    resolution: {integrity: sha512-XdnHEjj7ighxlT5BEoGuF50xS+kgdCcQVyfu14HtyelqWm+9a1x61c1ZNuVFUkMtqr+X/gL6Te11Lhpt5hZx+g==}
+    hasBin: true
     dev: true
 
   /convert-source-map@1.8.0:
@@ -4545,7 +4557,3 @@ packages:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false

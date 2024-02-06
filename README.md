@@ -1,12 +1,19 @@
-# markdown-it-code-group
+<p align="center">
+<a href="https://www.npmjs.com/package/markdown-it-code-group" target="_blank" rel="noopener noreferrer">
+<img src="https://api.iconify.design/teenyicons:markdown-outline.svg?color=%2300bfff" alt="logo" width='100'/></a>
+</p>
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![bundle][bundle-src]][bundle-href]
-[![JSDocs][jsdocs-src]][jsdocs-href]
-[![License][license-src]][license-href]
+<p align="center">
+  A markdown-it plugin to support convert markdown to html with code group style.
+</p>
 
-Support [Code Group Style](https://github.com/orgs/community/discussions/16925) for [markdown-it](https://github.com/markdown-it/markdown-it).
+<p align="center">
+  <a href="https://www.npmjs.com/package/markdown-it-code-group" target="_blank" rel="noopener noreferrer"><img src="https://badge.fury.io/js/csvs-parsers.svg" alt="NPM Version" /></a>
+  <a href="https://www.npmjs.com/package/markdown-it-code-group" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/npm/dt/csvs-parsers.svg?logo=npm" alt="NPM Downloads" /></a>
+  <a href="https://bundlephobia.com/result?p=markdown-it-code-group" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/bundlephobia/minzip/markdown-it-code-group" alt="Minizip" /></a>
+  <a href="https://github.com/hunghg255/markdown-it-code-group/graphs/contributors" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg" alt="Contributors" /></a>
+  <a href="https://github.com/hunghg255/markdown-it-code-group/blob/main/LICENSE" target="_blank" rel="noopener noreferrer"><img src="https://badgen.net/github/license/hunghg255/markdown-it-code-group" alt="License" /></a>
+</p>
 
 ## Usage
 
@@ -25,8 +32,6 @@ md.use(MarkdownItCodeGroup, /* Options */)
 const html = md.render(/* ... */)
 ```
 
-For the options available, please refer to [the jsdoc](./src/index.ts).
-
 ### Styling
 
 ```js
@@ -37,21 +42,8 @@ import 'markdown-it-code-group/styles/code-group-base.css'
 
 You might change `code-group-colors-dark-media.css` to `code-group-colors-dark-class.css` if you are using class-based (`.dark`) dark mode.
 
-Refer to the [source code](./styles) for more details.
+Refer to the [source code](https://github.com/hunghg255/markdown-it-code-group/tree/main/styles) for more details.
 
 ## License
 
-[MIT](./LICENSE) License © 2024-PRESENT [Hung](https://github.com/hunghg255)
-
-<!-- Badges -->
-
-[npm-version-src]: https://img.shields.io/npm/v/markdown-it-code-group?style=flat&colorA=080f12&colorB=1fa669
-[npm-version-href]: https://npmjs.com/package/markdown-it-code-group
-[npm-downloads-src]: https://img.shields.io/npm/dm/markdown-it-code-group?style=flat&colorA=080f12&colorB=1fa669
-[npm-downloads-href]: https://npmjs.com/package/markdown-it-code-group
-[bundle-src]: https://img.shields.io/bundlephobia/minzip/markdown-it-code-group?style=flat&colorA=080f12&colorB=1fa669&label=minzip
-[bundle-href]: https://bundlephobia.com/result?p=markdown-it-code-group
-[license-src]: https://img.shields.io/github/license/antfu/markdown-it-code-group.svg?style=flat&colorA=080f12&colorB=1fa669
-[license-href]: https://github.com/antfu/markdown-it-code-group/blob/main/LICENSE
-[jsdocs-src]: https://img.shields.io/badge/jsdocs-reference-080f12?style=flat&colorA=080f12&colorB=1fa669
-[jsdocs-href]: https://www.jsdocs.io/package/markdown-it-code-group
+[MIT](https://github.com/hunghg255/markdown-it-code-group/blob/main/LICENSE) License © 2024-PRESENT [Hung](https://github.com/hunghg255)
