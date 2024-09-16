@@ -17,9 +17,20 @@
 
 ## Usage
 
-```bash
-npm i markdown-it-code-group
+:::code-group-open
+```bash [npm]
+ npm install markdown-it-code-group --save-dev
 ```
+```bash [yarn]
+ yarn add markdown-it-code-group --dev
+```
+```bash [pnpm]
+ pnpm i -D markdown-it-code-group
+```
+```bash [bun]
+ bun install markdown-it-code-group --save-dev
+```
+:::code-group-close
 
 ```js
 import MarkdownIt from 'markdown-it'
@@ -40,9 +51,9 @@ import { markdownItCodeGroupDom } from 'markdown-it-code-group/dom'
 markdownItCodeGroupDom()
 ```
 
-### Example
+You might change `code-group-colors-dark-media.css` to `code-group-colors-dark-class.css` if you are using class-based (`.dark`) dark mode.
 
-[Example](./test/input/1.basic.md)
+Refer to the [source code](https://github.com/hunghg255/markdown-it-code-group/tree/main/styles) for more details.
 
 ## License
 

@@ -73,7 +73,7 @@
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks",
     "gn": "esno scripts/generate.mts",
-    "gen-docs": "convert-markdown-to-html  -i README.md -o docs/index.html -t \"Markdown Code Group\" -g https://github.com/hunghg255/markdown-it-code-group"
+    "gen-docs": "convert-markdown-to-html"
   },
   "peerDependencies": {
     "markdown-it": "^14.0.0"
@@ -85,7 +85,7 @@
     "@types/markdown-it": "^13.0.7",
     "@types/node": "^20.10.6",
     "bumpp": "^9.2.1",
-    "convert-markdown-to-html": "^0.0.2",
+    "convert-markdown-to-html": "^0.5.0",
     "eslint": "^8.56.0",
     "esno": "^4.0.0",
     "lint-staged": "^15.2.0",
