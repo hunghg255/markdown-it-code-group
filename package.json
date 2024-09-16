@@ -24,7 +24,11 @@
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
     },
-    "./styles/*": "./styles/*"
+    "./dom": {
+      "types": "./dist/dom/index.d.ts",
+      "import": "./dist/dom/index.mjs",
+      "require": "./dist/dom/index.js"
+    }
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
@@ -42,7 +46,7 @@
     "styles"
   ],
   "scripts": {
-    "build": "unbuild",
+    "build": "pnpm run gn && unbuild",
     "dev": "unbuild --stub",
     "lint": "eslint .",
     "prepublishOnly": "nr build",
@@ -51,6 +55,7 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks",
+    "gn": "esno scripts/generate.mts",
     "gen-docs": "convert-markdown-to-html  -i README.md -o docs/index.html -t \"Markdown Code Group\" -g https://github.com/hunghg255/markdown-it-code-group"
   },
   "peerDependencies": {

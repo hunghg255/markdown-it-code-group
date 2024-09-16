@@ -1,3 +1,20 @@
+:root {
+  --bg-code-group: #242424;
+  --color-active: #ffa500;
+}
+
+.dark {
+  --bg-code-group: #242424;
+  --color-active: #ffa500;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-code-group: #242424;
+    --color-active: #ffa500;
+  }
+}
+
 .markdown-code-group {
   background-color: var(--bg-code-group);
   contain: content;

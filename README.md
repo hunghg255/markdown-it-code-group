@@ -32,12 +32,12 @@ md.use(MarkdownItCodeGroup, /* Options */)
 const html = md.render(/* ... */)
 ```
 
-### Styling
+### DOM Actions
 
-```js
-import 'markdown-it-code-group/styles/code-group-colors-light.css'
-import 'markdown-it-code-group/styles/code-group-colors-dark-media.css'
-import 'markdown-it-code-group/styles/code-group-base.css'
+```ts
+import { markdownItCodeGroupDom } from 'markdown-it-code-group/dom'
+
+markdownItCodeGroupDom()
 ```
 
 You might change `code-group-colors-dark-media.css` to `code-group-colors-dark-class.css` if you are using class-based (`.dark`) dark mode.
