@@ -1,7 +1,4 @@
-export const css = `
-
-
-:root {
+export const css = `:root {
   --bg-code-group: #242424;
   --color-active: #ffa500;
 }
