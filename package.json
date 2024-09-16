@@ -1,7 +1,7 @@
 {
   "name": "markdown-it-code-group",
   "type": "module",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "packageManager": "pnpm@8.13.1",
   "description": "Support code group for markdown-it",
   "author": "Hung <giahung197bg@gmail.com.com>",
